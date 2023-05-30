@@ -1,0 +1,24 @@
+1.Define the Cab class with the following protected members:
+  cab_type: a string that represents the type of cab,such as "Micro", "Mini", or "Sedan".
+  base_fare: a double that represents the base fare for the cab ride.
+  rate_per_km: a double that represents the cost per kilometer for the cab ride.
+  Define a pure virtual function calculate_fare() that takes a double parameter distance representing the distance to be traveled and returns a double 
+  representing the total fare for the cab ride.
+  Define a pure virtual function display_details() that does not take any parameters and displays the cab details, such as the cab type, base fare, and 
+  rate per km.
+2.Define the MicroCab, MiniCab, and SedanCab classes as derived classes of Cab that implement the calculate_fare() and display_details() functions for 
+  each cab type.
+3.In the main() function:
+  a. Create an empty vector of Cab* pointers to store objects of the three cab types.
+  b. Create objects of the MicroCab, MiniCab, and SedanCab classes using the new operator, and add them to the vector.
+  c. Prompt the user to input the distance to be traveled, and store the input in a double variable distance.
+  d. Initialize a double variable fare to 0.
+  e. Iterate through the vector of Cab* pointers using a for loop and for each cab object:
+      i. Call the display_details() function to display the cab details, such as the cab type, base fare, and rate per km.
+      ii. Call the calculate_fare() function of the cab object with the distance input by the user to calculate the fare for the cab ride, and store 
+      the result in the fare variable.
+      iii. Display the calculated fare using cout.
+  f. Delete each cab object in the vector using the delete operator to free up memory.
+  g. Clear the vector of Cab* pointers to free up memory.
+4.End the program.
+
